@@ -1,0 +1,8 @@
+<md-card>
+  <form (submit)="addTodo(descriptionInput, $event)">
+    <md-input-container>
+      <input mdInput placeholder="Todo" value="" #descriptionInput>
+    </md-input-container>
+    <button md-icon-button mdTooltip="Add todo" color="primary"><i class="material-icons">add_circle_outline</i></button>
+  </form>
+</md-card>
