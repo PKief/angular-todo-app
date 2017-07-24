@@ -3,7 +3,7 @@ import { Todo } from './todo';
 
 @Injectable()
 export class TodoService {
-  todoList: Todo[] = [];
+  todoList: Todo[] = [new Todo('1', 'buy water'), new Todo('2', 'wash the car')];
   constructor() { }
 
   addTodo(todo: Todo) {

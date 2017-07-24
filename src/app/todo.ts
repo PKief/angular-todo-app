@@ -9,11 +9,7 @@ export class Todo {
         this.done = false;
     }
 
-    markAsDone() {
-        this.done = true;
-    }
-
-    markAsUndone() {
-        this.done = false;
+    toggle() {
+        this.done = !this.done;
     }
 }

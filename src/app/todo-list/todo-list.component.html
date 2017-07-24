@@ -1,5 +1,15 @@
-<md-list>
-  <md-list-item *ngFor="let todo of todoList">
-    {{todo.description}}
-  </md-list-item>
-</md-list>
+<div *ngIf="todoList.length > 0; else emptyList">
+  <md-list>
+    <md-list-item *ngFor="let todo of todoList" class="todo-item">
+      <md-checkbox [checked]="todo.done" (change)="checkTodo(todo)">
+        <span class="description" [ngClass]="todo.done ? 'done' : ''">{{todo.description}}</span>
+      </md-checkbox>
+      <div class="removeButton">
+        <button md-icon-button mdTooltip="Delete todo" (click)="removeTodo(todo)"><i class="material-icons">delete</i></button>
+      </div>
+    </md-list-item>
+  </md-list>
+</div>
+<ng-template #emptyList>
+  <div class="emptyList">No todo here!</div>
+</ng-template>
