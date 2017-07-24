@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddTodoComponent } from './add-todo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MyMaterialModule } from '../my-material/my-material.module';
+import { TodoService } from '../todo.service';
 
 describe('AddTodoComponent', () => {
   let component: AddTodoComponent;
@@ -8,9 +11,16 @@ describe('AddTodoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddTodoComponent ]
+      declarations: [AddTodoComponent],
+      imports: [
+        BrowserAnimationsModule,
+        MyMaterialModule
+      ],
+      providers: [
+        TodoService
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
