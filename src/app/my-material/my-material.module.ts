@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { A11yModule } from '@angular/material';
 import { CompatibilityModule } from '@angular/material';
 import { MdAutocompleteModule } from '@angular/material';
 import { MdButtonToggleModule } from '@angular/material';
@@ -28,7 +27,6 @@ import { MdTabsModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
 import { MdTooltipModule } from '@angular/material';
 import { OverlayModule } from '@angular/material';
-import { PlatformModule } from '@angular/material';
 import { StyleModule } from '@angular/material';
 
 const MATERIAL_MODULES = [
@@ -50,7 +48,6 @@ const MATERIAL_MODULES = [
   MdToolbarModule,
 
   // These modules include providers.
-  A11yModule,
   CompatibilityModule,
   MdButtonToggleModule,
   MdDialogModule,
@@ -62,7 +59,6 @@ const MATERIAL_MODULES = [
   MdSnackBarModule,
   MdTooltipModule,
   OverlayModule,
-  PlatformModule,
   StyleModule
 ];
 
