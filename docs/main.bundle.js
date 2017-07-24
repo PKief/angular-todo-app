@@ -89,7 +89,7 @@ var _a;
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<md-toolbar color=\"primary\">\n  <span>Todo App</span>\n  <!-- This fills the remaining space of the current row -->\n  <span class=\"example-fill-remaining-space\"></span>\n\n  <!-- <md-icon class=\"example-icon\">code</md-icon> -->\n  <a href=\"https://github.com/PKief/angular-todo-app\" md-icon-button mdTooltip=\"Github repo\">\n    <i class=\"material-icons\">code</i>\n  </a>\n</md-toolbar>\n\n<app-add-todo></app-add-todo>\n<app-todo-list></app-todo-list>"
+module.exports = "<md-toolbar color=\"primary\">  \n  <span>Todo App</span>\n  <!-- This fills the remaining space of the current row -->\n  <span class=\"example-fill-remaining-space\"></span>\n\n  <!-- <md-icon class=\"example-icon\">code</md-icon> -->\n  <a href=\"https://github.com/PKief/angular-todo-app\" md-icon-button mdTooltip=\"Github repo\">\n    <i class=\"material-icons\">code</i>\n  </a>\n</md-toolbar>\n\n<app-add-todo></app-add-todo>\n<app-todo-list></app-todo-list>"
 
 /***/ }),
 
@@ -149,10 +149,10 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__my_material_my_material_module__ = __webpack_require__("../../../../../src/app/my-material/my-material.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/todo-list/todo-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__todo_service__ = __webpack_require__("../../../../../src/app/todo.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_material_my_material_module__ = __webpack_require__("../../../../../src/app/my-material/my-material.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__todo_service__ = __webpack_require__("../../../../../src/app/todo.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/todo-list/todo-list.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__add_todo_add_todo_component__ = __webpack_require__("../../../../../src/app/add-todo/add-todo.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -177,17 +177,17 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__todo_list_todo_list_component__["a" /* TodoListComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__todo_list_todo_list_component__["a" /* TodoListComponent */],
             __WEBPACK_IMPORTED_MODULE_7__add_todo_add_todo_component__["a" /* AddTodoComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_4__my_material_my_material_module__["a" /* MyMaterialModule */]
+            __WEBPACK_IMPORTED_MODULE_3__my_material_my_material_module__["a" /* MyMaterialModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_6__todo_service__["a" /* TodoService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
