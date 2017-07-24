@@ -34,5 +34,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
-  }));  
+  }));
 });
