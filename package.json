@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:docs": "ng build --prod --aot --output-path docs --base-href angular-todo-app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
