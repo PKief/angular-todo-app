@@ -1,13 +1,7 @@
-<md-toolbar color="primary">  
-  <span>Todo App</span>
-  <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
-
-  <!-- <md-icon class="example-icon">code</md-icon> -->
-  <a href="https://github.com/PKief/angular-todo-app" md-icon-button mdTooltip="Github repo">
-    <i class="material-icons">code</i>
-  </a>
-</md-toolbar>
-
-<app-add-todo></app-add-todo>
-<app-todo-list></app-todo-list>
+<div class="app">
+  <app-sidenav>
+    <app-toolbar></app-toolbar>
+    <app-add-todo></app-add-todo>
+    <app-todo-list></app-todo-list>
+  </app-sidenav>
+</div>

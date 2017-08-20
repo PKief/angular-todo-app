@@ -9,6 +9,7 @@ import { TodoService } from './todo.service';
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MyMaterialModule
+    MyMaterialModule,
+    CoreModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
