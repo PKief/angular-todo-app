@@ -1,9 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddTodoComponent } from './add-todo.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyMaterialModule } from '../my-material/my-material.module';
 import { TodoService } from '../todo.service';
+import { SharedModule } from '../shared/shared.module';
 
 describe('AddTodoComponent', () => {
   let component: AddTodoComponent;
@@ -13,8 +12,7 @@ describe('AddTodoComponent', () => {
     TestBed.configureTestingModule({
       declarations: [AddTodoComponent],
       imports: [
-        BrowserAnimationsModule,
-        MyMaterialModule
+        SharedModule
       ],
       providers: [
         TodoService

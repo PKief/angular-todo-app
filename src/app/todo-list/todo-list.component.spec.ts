@@ -2,8 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TodoListComponent } from './todo-list.component';
 import { TodoService } from '../todo.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyMaterialModule } from '../my-material/my-material.module';
+import { SharedModule } from '../shared/shared.module';
 
 describe('TodoListComponent', () => {
   let component: TodoListComponent;
@@ -13,8 +12,7 @@ describe('TodoListComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ TodoListComponent ],
       imports: [
-        BrowserAnimationsModule,
-        MyMaterialModule
+        SharedModule
       ],
       providers: [
         TodoService

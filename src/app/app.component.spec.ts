@@ -4,16 +4,16 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyMaterialModule } from './my-material/my-material.module';
 import { TodoService } from './todo.service';
+import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        BrowserAnimationsModule,
-        MyMaterialModule
+        SharedModule,
+        CoreModule
       ],
       declarations: [
         AppComponent,

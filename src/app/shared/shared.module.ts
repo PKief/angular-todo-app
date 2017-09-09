@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+
 import {
   MdAutocompleteModule,
   MdButtonModule,
@@ -46,8 +49,6 @@ const MATERIAL_MODULES = [
   MdSidenavModule,
   MdTabsModule,
   MdToolbarModule,
-
-  // These modules include providers.
   CompatibilityModule,
   MdButtonToggleModule,
   MdDialogModule,
@@ -63,7 +64,11 @@ const MATERIAL_MODULES = [
 ];
 
 @NgModule({
-  imports: MATERIAL_MODULES,
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MATERIAL_MODULES
+  ],
   exports: MATERIAL_MODULES
 })
-export class MyMaterialModule { }
+export class SharedModule { }

@@ -1,8 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyMaterialModule } from './my-material/my-material.module';
 
 import { TodoService } from './todo.service';
 
@@ -10,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +15,7 @@ import { CoreModule } from './core/core.module';
     AddTodoComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MyMaterialModule,
+    SharedModule,
     CoreModule
   ],
   providers: [TodoService],
