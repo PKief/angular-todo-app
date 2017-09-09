@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MdSidenav, MdSidenavToggleResult } from '@angular/material';
+import { MdSidenav, MdDrawerToggleResult } from '@angular/material';
 
 @Injectable()
 export class SidenavService {
@@ -17,18 +17,18 @@ export class SidenavService {
   /**
    * Open this sidenav, and return a Promise that will resolve when it's fully opened (or get rejected if it didn't).
    *
-   * @returns Promise<MdSidenavToggleResult>
+   * @returns Promise<MdDrawerToggleResult>
    */
-  public open(): Promise<MdSidenavToggleResult> {
+  public open(): Promise<MdDrawerToggleResult> {
     return this.sidenav.open();
   }
 
   /**
    * Close this sidenav, and return a Promise that will resolve when it's fully closed (or get rejected if it didn't).
    *
-   * @returns Promise<MdSidenavToggleResult>
+   * @returns Promise<MdDrawerToggleResult>
    */
-  public close(): Promise<MdSidenavToggleResult> {
+  public close(): Promise<MdDrawerToggleResult> {
     return this.sidenav.close();
   }
 
@@ -37,9 +37,9 @@ export class SidenavService {
    *
    * @param {boolean} isOpen  Whether the sidenav should be open.
    *
-   * @returns {Promise<MdSidenavToggleResult>}
+   * @returns {Promise<MdDrawerToggleResult>}
    */
-  public toggle(isOpen?: boolean): Promise<MdSidenavToggleResult> {
+  public toggle(isOpen?: boolean): Promise<MdDrawerToggleResult> {
     return this.sidenav.toggle(isOpen);
   }
 }
